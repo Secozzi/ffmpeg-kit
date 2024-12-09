@@ -11,7 +11,7 @@ android {
         minSdk 16
         targetSdk 33
         versionCode 160600
-        versionName "1.15"
+        versionName "1.16"
         project.archivesBaseName = "ffmpeg-kit"
         consumerProguardFiles "consumer-rules.pro"
     }
