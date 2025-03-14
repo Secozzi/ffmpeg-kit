@@ -20,7 +20,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: run the build script
-        run: ./android.sh --lts --disable-arm-v7a-neon --enable-cpu-features
+        run: ./android.sh --full --lts --disable-arm-v7a-neon --enable-cpu-features
       - name: copy build artifact
         run: mv prebuilt/bundle-android-aar-lts/ffmpeg-kit/ffmpeg-kit.aar aniyomi-ffmpeg-kit-${{ github.ref_name }}.aar
       - name: release artifact
